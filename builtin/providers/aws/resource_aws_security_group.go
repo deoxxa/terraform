@@ -102,6 +102,14 @@ func resource_aws_security_group_destroy(
 	return err
 }
 
+func resource_aws_security_group_update(
+	s *terraform.ResourceState,
+	d *terraform.ResourceDiff,
+	meta interface{}) (*terraform.ResourceState, error) {
+
+	return s, nil
+}
+
 func resource_aws_security_group_refresh(
 	s *terraform.ResourceState,
 	meta interface{}) (*terraform.ResourceState, error) {
