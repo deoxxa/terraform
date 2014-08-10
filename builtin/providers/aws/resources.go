@@ -143,6 +143,7 @@ func init() {
 				Destroy:         resource_aws_security_group_destroy,
 				Diff:            resource_aws_security_group_diff,
 				Refresh:         resource_aws_security_group_refresh,
+				Update:          resource_aws_security_group_update,
 			},
 
 			"aws_subnet": resource.Resource{
